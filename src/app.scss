@@ -25,6 +25,10 @@ header {
     background-repeat: no-repeat;
     height: 80px;
     background-color: $desaturated-dark-cyan;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include desktop {
         background-image: url(/bg-header-desktop.svg);
@@ -39,6 +43,8 @@ main {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 700;
+    position: relative;
+
     ul.container {
         padding: 0;
         margin: 0;
@@ -46,66 +52,75 @@ main {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        margin-top: 2rem;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
         width: 86%;
     }
 
-    .filters-container {
-        background-color: white;
-        border-radius: 5px;
-        padding: 1rem 2rem;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 86%;
-        display: flex;
-        
 
-        .clear-all {
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-            &:hover {
-                color: $desaturated-dark-cyan;
-                text-decoration: underline;
-            }
-        }
+}
 
+.filters-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 86%;
+    display: flex;
+    position: absolute;
+    top: 40%;
 
-        .filters {
-            gap: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 80%;
-        }
+    @include desktop {
+        top: 64%;
+    }
 
-        .filter {
-            background-color: $light-grayish-cyan;
+    .clear-all {
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover {
             color: $desaturated-dark-cyan;
-            font-size: 14px;
+            text-decoration: underline;
+        }
+    }
+
+
+    .filters {
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+
+    .filter {
+        background-color: $light-grayish-cyan;
+        color: $desaturated-dark-cyan;
+        font-size: 14px;
+        display: inline-flex;
+        gap: .4rem;
+        align-items: center;
+        border-radius: 5px;
+        max-height: 1.8rem;
+
+        span:first-child {
+            padding: 0 .4rem;
+            border-radius: 5px 0 0 5px;
+        }
+
+        span:last-child {
+            cursor: pointer;
+            background-color: $desaturated-dark-cyan;
+            padding: .3rem .4rem;
             display: inline-flex;
-            gap: .4rem;
+            border-radius: 0 5px 5px 0;
+            transition: all .3s ease-in-out;
+            height: 100%;
             align-items: center;
-            border-radius: 5px;
 
-            span:first-child {
-                padding: 0 .4rem;
-                border-radius: 5px 0 0 5px;
-            }
-
-            span:last-child {
-                cursor: pointer;
-                background-color: $desaturated-dark-cyan;
-                padding: .3rem .4rem;
-                display: inline-flex;
-                border-radius: 0 5px 5px 0;
-                transition: all .3s ease-in-out;
-                height: 100%;
-                align-items: center;
-
-                &:hover {
-                    background-color: black;
-                }
+            &:hover {
+                background-color: black;
             }
         }
     }
 }
-

@@ -6,7 +6,6 @@ const Job = ({jobDetails, setFilters, filters}) => {
 
 
   const addFilter = (keyword) => {
-    console.log("function called !!")
     if (!filters.includes(keyword)) {
       setFilters([...filters, keyword])
     }

@@ -31,9 +31,8 @@ function App() {
 
     return (
         <>
-            <header></header>
-            <main>
-                {filters.length > 0 && (
+            <header>
+            {filters.length > 0 && (
                     <div className="filters-container">
                       <div className="filters">
                         {filters.map((filter, i) => (
@@ -60,6 +59,9 @@ function App() {
                       </div>
                     </div>
                 )}
+            </header>
+            <main>
+
                 <ul className="container">
                     {jobs.map((job, i) => (
                         <li key={i}>
