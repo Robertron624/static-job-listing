@@ -27,6 +27,19 @@ $very-dark-grayish-cyan: hsl(180, 14%, 20%);
     border-radius: 5px;
     box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.8);
 
+    .desktop-company-image {
+        display: none;
+    }
+
+    .job-position {
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $desaturated-dark-cyan;
+        }
+    }
+
     @include desktop {
 
         display: flex;
@@ -36,6 +49,11 @@ $very-dark-grayish-cyan: hsl(180, 14%, 20%);
         .desktop-left {
             display: flex;
             gap: 1rem;
+
+            .desktop-company-image 
+            {
+                display: block;
+            }
     
             .desktop-left-text {
                 display: flex;
@@ -73,7 +91,13 @@ $very-dark-grayish-cyan: hsl(180, 14%, 20%);
             background-color: $light-grayish-cyan-tablets;
             color: $desaturated-dark-cyan;
             cursor: pointer;
+            transition: all .3s ease-in-out;
             // width: fit-content;
+
+            &:hover {
+                background-color: $desaturated-dark-cyan;
+                color: white;
+            }
         }
 
         @include desktop {

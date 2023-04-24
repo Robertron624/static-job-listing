@@ -8,6 +8,8 @@ function App() {
 
   const [jobs, setJobs] = useState(data)
 
+  const [ filters, setFilters ] = useState([])
+
   return (
     <>
       <header>

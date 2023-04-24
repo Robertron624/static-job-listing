@@ -19,8 +19,8 @@ const Job = ({jobDetails}) => {
           <span className="job-position">{position}</span>
           <div className="job-misc">
             <span className="long-ago">{postedAt}</span>
-            <span className="contract">. {contract}</span>
-            <span className="location">. {location}</span>
+            <span className="contract">· {contract}</span>
+            <span className="location">· {location}</span>
           </div>
         </div>
 
