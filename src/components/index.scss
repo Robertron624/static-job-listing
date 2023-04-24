@@ -1,0 +1,79 @@
+// ### Primary
+
+$desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+// ### Neutral
+
+// (Background)
+$light-grayish-cyan : hsl(180, 52%, 96%);
+// (Filter Tablets)
+$light-grayish-cyan-tablets : hsl(180, 31%, 95%);
+$dark-grayish-cyan: hsl(180, 8%, 52%);
+$very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+.job-container {
+    border-left: 4px solid $desaturated-dark-cyan;
+    font-size: 14px;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+
+    .job-misc {
+        color: $dark-grayish-cyan;
+        font-weight: 400;
+        display: flex;
+        gap: .5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $dark-grayish-cyan;
+    }
+
+    .job-keywords {
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: min-content auto;
+        gap: .5rem;
+
+        .keyword {
+            padding: .5rem;
+            border-radius: 5px;
+            background-color: $light-grayish-cyan-tablets;
+            color: $desaturated-dark-cyan;
+            cursor: pointer;
+            // width: fit-content;
+        }
+    }
+}
+
+
+.job-header {
+    position: relative;
+    margin-bottom: 1rem;
+
+    img {
+        position: absolute;
+        width: 30px;
+        top: -37px;
+    }
+
+    font-size: 14px;
+
+    .company-name {
+        color: $desaturated-dark-cyan;
+    }
+
+    .new {
+        background-color: $desaturated-dark-cyan;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+    .featured {
+        background-color: $very-dark-grayish-cyan;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+}
