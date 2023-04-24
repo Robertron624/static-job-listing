@@ -1,11 +1,27 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import './app.scss'
+import Job from './components/Job'
+
+import data from './data.json'
 
 function App() {
 
+  const [jobs, setJobs] = useState(data)
+
   return (
     <>
-      <h1>Hello</h1>
+      <header>
+
+      </header>
+      <main>
+        <ul className="container">
+          {jobs.map((job, i) => (
+            <li key={i}>
+              <Job jobDetails={job}/>
+            </li>
+          ))}
+        </ul>
+      </main>
     </>
   )
 }
