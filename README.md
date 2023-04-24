@@ -26,11 +26,13 @@ Users should be able to:
 - Filter job listings based on the categories
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/234124059-6a51dda8-783a-43b9-ac27-c6aadfadf120.png)
+
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/static-job-listing)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://delightful-taffy-8b2731.netlify.app/)
 
 ## My process
 
