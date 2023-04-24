@@ -1,8 +1,17 @@
 /* eslint-disable react/prop-types */
 
 import './index.scss'
-const Job = ({jobDetails}) => {
+const Job = ({jobDetails, setFilters, filters}) => {
   const {company, logo, featured, new: isNew, position, role, level, postedAt, contract, location, languages, tools} = jobDetails
+
+
+  const addFilter = (keyword) => {
+    console.log("function called !!")
+    if (!filters.includes(keyword)) {
+      setFilters([...filters, keyword])
+    }
+  }
+
   return (
     <div className={`job-container ${featured ? 'featured-job': ''}`}>
       <div className="desktop-left">
@@ -26,10 +35,10 @@ const Job = ({jobDetails}) => {
 
       </div>
       <div className="job-keywords">
-        {languages.map((language, i) => (<span key={i} className="keyword">{language}</span>))}
-        <span className="keyword">{role}</span>
-        <span className="keyword">{level}</span>
-        {tools.map((tool, i) => (<span key={i} className="keyword">{tool}</span>))}
+        {languages.map((language, i) => (<span onClick={()=>addFilter(language)} key={i} className="keyword">{language}</span>))}
+        <span onClick={()=>addFilter(role)} className="keyword">{role}</span>
+        <span onClick={()=>addFilter(level)} className="keyword">{level}</span>
+        {tools.map((tool, i) => (<span onClick={() => addFilter(tool)} key={i} className="keyword">{tool}</span>))}
       </div>
     </div>
   )

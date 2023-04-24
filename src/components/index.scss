@@ -104,6 +104,8 @@ $very-dark-grayish-cyan: hsl(180, 14%, 20%);
             display: flex;
             gap: 1rem;
             align-items: center;
+            flex-wrap: wrap;
+            padding-top: 0;
         }
     }
 }
