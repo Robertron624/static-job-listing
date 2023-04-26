@@ -87,6 +87,6 @@ I want to keep improving my skills in React and also in CSS/Sass. I want to keep
 - [How to Filter an Array of Objects in React](https://bobbyhadz.com/blog/react-filter-array-of-objects) - This helped me for handling the filter of the data, It was explained in a very simple way and I'd recommend it to anyone still learning this concept.
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Personal Website - [Robert Ramirez](https://robert-ramirez.netlify.app)
+- Frontend Mentor User- [@Robertron624](https://www.frontendmentor.io/profile/Robertron624)
+- Twitter - [@robertdowny](https://www.twitter.com/robertdowny)
